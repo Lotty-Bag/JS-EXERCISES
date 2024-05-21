@@ -13,20 +13,23 @@
 <body>
     <div class="container">
 
-        <section class="pt-5">
+        <section class="py-5">
             <h1 class="text-center">Esercizi sulla Ricerca Dicotomica</h1>
         </section>
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#es1" type="button" role="tab" aria-controls="es1" aria-selected="true">ESERCIZIO 1</button>
+              <button class="nav-link active" id="es1-tab" data-bs-toggle="tab" data-bs-target="#es1" type="button" role="tab" aria-controls="es1" aria-selected="true">ESERCIZIO 1</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#es2" type="button" role="tab" aria-controls="es2" aria-selected="false">ESERCIZIO 2</button>
+              <button class="nav-link" id="es2-tab" data-bs-toggle="tab" data-bs-target="#es2" type="button" role="tab" aria-controls="es2" aria-selected="false">ESERCIZIO 2</button>
             </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="es3-tab" data-bs-toggle="tab" data-bs-target="#es3" type="button" role="tab" aria-controls="es3" aria-selected="false">ESERCIZIO 3</button>
+              </li>
           </ul>
           <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade" id="es1" role="tabpanel" aria-labelledby="es1-tab">
+            <div class="tab-pane show active" id="es1" role="tabpanel" aria-labelledby="es1-tab">
                 <section id="esercizio1" class="pt-5 text-center">
                     <h4>Pensa ad un numero N compreso tra 0 e 16 e poi rispondi alle seguenti domande:</h4>
                     <br><br><br>
@@ -37,7 +40,7 @@
                     </div>
                 </section>
             </div>
-            <div class="tab-pane fade  show active" id="es2" role="tabpanel" aria-labelledby="es2-tab">
+            <div class="tab-pane fade" id="es2" role="tabpanel" aria-labelledby="es2-tab">
                 <section id="esercizio2" class="pt-5">
                     <h3 class="text-center">Scegli un numero minore o uguale a 1024, scrivilo qui e premi invia:</h3>
                     <div class="row text-center pt-4">
@@ -45,13 +48,27 @@
                         <div class="col-2"><textarea name="" id="textarea" cols="15" rows="1" type="password"></textarea></div>
                         <div class="col-2 justify-content-start"><button type="button" class="btn btn-success" onclick="calcola()">Invia</button></div>
                         <div class="col"></div>
-
                     </div>
                     <br><br><br>
                     <h5 class="pb-4">Qui di seguito troviamo i passaggi realizzati per trovare la soluzione:</h5>
                     <ol id="orList"></ol>
                     <div class="row py-4">
                         <h4 id="h4"></h4>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="es3" role="tabpanel" aria-labelledby="es3-tab">
+                <section id="esercizio3" class="pt-5">
+                    <h3 class="text-center">Scegli un numero minore o uguale a 1024. <br> Scrivilo qui sotto e premi invia per scoprire se il numero che hai scelto fa parte dei 100 selezionati randomicamente all'interno dell'array:</h3>
+                    <div class="row text-center pt-4">
+                        <div class="col"></div>
+                        <div class="col-2"><input name="" id="input" cols="15" type="text"></div>
+                        <div class="col-2 justify-content-start"><button type="button" class="btn btn-success" onclick="verifica()">Invia</button></div>
+                        <div class="col"></div>
+                    </div>
+                    <br><br><br>
+                    <div class="row py-4">
+                        <h4 id="risultato"></h4>
                     </div>
                 </section>
             </div>
@@ -70,7 +87,7 @@
         crossorigin="anonymous"></script>
     <script src="js/esercizio1.js"></script>
     <script src="js/esercizio2.js"></script>
-
+    <script src="js/esercizio3.js"></script>
 
 </body>
 
