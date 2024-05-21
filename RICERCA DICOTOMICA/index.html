@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Ricerca Dicotomica</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <section class="pt-5">
+            <h1 class="text-center">Esercizi sulla Ricerca Dicotomica</h1>
+        </section>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#es1" type="button" role="tab" aria-controls="es1" aria-selected="true">ESERCIZIO 1</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#es2" type="button" role="tab" aria-controls="es2" aria-selected="false">ESERCIZIO 2</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade" id="es1" role="tabpanel" aria-labelledby="es1-tab">
+                <section id="esercizio1" class="pt-5 text-center">
+                    <h4>Pensa ad un numero N compreso tra 0 e 16 e poi rispondi alle seguenti domande:</h4>
+                    <br><br><br>
+                    <h2 class="pb-4"> - Il numero scelto è maggiore/uguale o minore di <span class="numero"></span> ?</h2>
+                    <div class="row">
+                        <div class="col"><button class="px-4 py-2" onclick="scelta('min')"><h2> N < <span class="numero"></span></h2></button></div>
+                        <div class="col"><button class="px-4 py-2" onclick="scelta('mag')"><h2> N ≥ <span class="numero"></span></h2></button></div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane fade  show active" id="es2" role="tabpanel" aria-labelledby="es2-tab">
+                <section id="esercizio2" class="pt-5">
+                    <h3 class="text-center">Scegli un numero minore o uguale a 1024, scrivilo qui e premi invia:</h3>
+                    <div class="row text-center pt-4">
+                        <div class="col"></div>
+                        <div class="col-2"><textarea name="" id="textarea" cols="15" rows="1" type="password"></textarea></div>
+                        <div class="col-2 justify-content-start"><button type="button" class="btn btn-success" onclick="calcola()">Invia</button></div>
+                        <div class="col"></div>
+
+                    </div>
+                    <br><br><br>
+                    <h5 class="pb-4">Qui di seguito troviamo i passaggi realizzati per trovare la soluzione:</h5>
+                    <ol id="orList"></ol>
+                    <div class="row py-4">
+                        <h4 id="h4"></h4>
+                    </div>
+                </section>
+            </div>
+          </div>
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="js/esercizio1.js"></script>
+    <script src="js/esercizio2.js"></script>
+
+
+</body>
+
+</html>
