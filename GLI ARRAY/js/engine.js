@@ -226,3 +226,7 @@ for (i = 0; i < NR; i++) {
 }
 
 console.log("La somma della left diagonal è: " + sumds)
+
+
+
+
