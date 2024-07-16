@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>ESERCIZI SULLE MATRICI</title>
+
+    <style>
+        .border{
+            border: 1px solid #000;
+        }
+
+        .diagonale {
+            background-color: #f3f8b7;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <section class="py-5">
+            <h1 class="text-center">ESERCIZI SULLE MATRICI</h1>
+        </section>
+        <section>
+            <div class="container">
+                <h4>Esercizio 1</h4>
+                <p>Data una matrice 5x5, calcolare la somma degli elementi presenti al di sopra della diagonale destra (diagonale compresa) e poi i rimanenti al di sotto di essa</p>
+                <div class="row">
+                    <div class="col-1 text-center border diagonale">
+                        <h6 id="47" class="py-2">47</h6>
+                    </div>
+                    <div class="col-1 text-center border">
+                        <h6 id="85" class="py-2">85</h6>
+                    </div>
+                    <div class="col-1 text-center border">
+                        <h6 id="23" class="py-2">23</h6>
+                    </div>
+                    <div class="col-1 text-center border">
+                        <h6 id="16" class="py-2">16</h6>
+                    </div>
+                    <div class="col-1 text-center border">
+                        <h6 id="78" class="py-2">78</h6>
+                    </div>
+                    <div class="col">
+                        <p id="sum1" class="text-center"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-center border">
+                        <h6 id="56" class="py-2">56</h6>
+                    </div>
+                    <div class="col-1 text-center border diagonale">
+                        <h6 id="12" class="py-2">12</h6>
+                    </div>
+                    <div class="col-1 text-center border">
+                        <h6 id="67" class="py-2">67</h6>
+                    </div>
+                    <div class="col-1 text-center border">
+                        <h6 id="34" class="py-2">34</h6>
+                    </div>
+                    <div class="col-1 text-center border">
+                        <h6 id="90" class="py-2">90</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-center border">
+                        <h6 id="11" class="py-2">11</h6>
+                    </div>
+                    <div class="col-1 text-center border">
+                        <h6 id="98" class="py-2">98</h6>
+                    </div>
+                    <div class="col-1 text-center border diagonale">
+                        <h6 id="5" class="py-2">5</h6>
+                    </div>
+                    <div class="col-1 text-center border">
+                        <h6 id="42" class="py-2">42</h6>
+                    </div>
+                    <div class="col-1 text-center border">
+                        <h6 id="63" class="py-2">63</h6>
+                    </div>
+                    <div class="col">
+                        <p id="sum2" class="text-center"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-center border">
+                        <h6 id="77" class="py-2">77</h6>
+                    </div>
+                    <div class="col-1 text-center border">
+                        <h6 id="24" class="py-2">24</h6>
+                    </div>
+                    <div class="col-1 text-center border">
+                        <h6 id="88" class="py-2">88</h6>
+                    </div>
+                    <div class="col-1 text-center border diagonale">
+                        <h6 id="39" class="py-2">39</h6>
+                    </div>
+                    <div class="col-1 text-center border">
+                        <h6 id="51" class="py-2">51</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-center border">
+                        <h6 id="3" class="py-2">3</h6>
+                    </div>
+                    <div class="col-1 text-center border">
+                        <h6 id="70" class="py-2">70</h6>
+                    </div>
+                    <div class="col-1 text-center border">
+                        <h6 id="14" class="py-2">14</h6>
+                    </div>
+                    <div class="col-1 text-center border">
+                        <h6 id="29" class="py-2">29</h6>
+                    </div>
+                    <div class="col-1 text-center border diagonale">
+                        <h6 id="86" class="py-2">86</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section" class="text-center">
+
+                <h1 id="vincitore" class="style-vincitore text-center"></h1>
+
+        </section>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="js/engine.js"></script>
+</body>
+
+</html>
